@@ -1,10 +1,11 @@
 import Header from "../Components/Header";
 import React, { useEffect, useState } from "react";
 import ContactCard from "../Components/ContactCard";
+
 function HomeFourth() {
   const [data, setValue] = useState([]);
   useEffect(() => {
-    fetch('https://jsonplaceholder.typicode.com/users')
+    fetch(process.env.REACT_APP_USERS)
       .then(response => response.json())
       .then((jsonData) => {setValue(jsonData);})
       .catch((error) => { console.error(error) })
