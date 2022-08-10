@@ -1,11 +1,12 @@
 import Header from "../Components/Header";
 import ContactCard from "../Components/ContactCard";
+import React from "react";
 function HomeThird() {
     const userData=[
         {"name":"Raguraj", "email":"ragu@mail.com","phone":4568, "website":"ragu.lk"},
         {"name":"Mathesh", "email":"mathesh@mail.com","phone":1234, "website":"mathesh.lk"},
     ];
-    console.log("------"+userData);
+    console.log(userData);
     return (
         <div>
             <Header></Header>

@@ -15,7 +15,14 @@ function HomeFourth() {
       <Header></Header>
       {
         data.map((val)=>{
-          return(<ContactCard key={val.phone} name={val.name} email={val.email} phone={val.phone} website={val.website}></ContactCard>);
+          return(
+            <ContactCard 
+              key={val.phone} 
+              name={val.name} 
+              email={val.email} 
+              phone={val.phone} 
+              website={val.website}>
+            </ContactCard>);
       })
       }
     </div>
